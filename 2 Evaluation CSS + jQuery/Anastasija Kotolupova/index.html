@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- CDN for Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+  <link rel="stylesheet" href="scss/style.min.css">
+  <title>Evaluation</title>
+</head>
+
+<body>
+
+  <header>
+    <section class="headerTop">
+      <h2>OhMyCats!</h2>
+    </section>
+    <section class="headerBottom">
+      <h1>Adopter un chat trop bon!</h1>
+    </section>
+  </header>
+
+  <main>
+    <div class="center">
+
+      <div class="left">
+
+        <!-- CAROUSEL -->
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+          </ol>
+
+          <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+              <img src="img/chat_1.jpg" alt="Image">
+              <div class="carousel-caption">
+                <h1>Onigri</h1>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="img/chat_2.jpg" alt="Image">
+              <div class="carousel-caption">
+                <h1>Sushi</h1>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="img/chat_3.jpg" alt="Image">
+              <div class="carousel-caption">
+                <h1>Maki</h1>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="img/chat_4.jpg" alt="Image">
+              <div class="carousel-caption">
+                <h1>Sashimi</h1>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="img/chat_5.jpg" alt="Image">
+              <div class="carousel-caption">
+                <h1>Yakitori</h1>
+              </div>
+            </div>
+          </div>
+
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+        </div>
+      </div>
+      <div class="right">
+
+          <h2>Les chats à adopter</h2>
+
+          <!-- FORM -->
+        <aside>
+          <form>
+            <fieldset>
+
+              <div class="form-group">
+                <label for="select">Choix du chat</label>
+
+          <!-- A drop-down menu with the names of the cats  -->
+
+                <select name="list" class="form-control" id="select">
+                  <option>-- Sélectionnez --</option>
+                  <option>Onigri</option>
+                  <option>Sushi</option>
+                  <option>Maki</option>
+                  <option>Sashimi</option>
+                  <option>Yakitori</option>
+                </select>
+                <p></p>
+              </div>
+
+              <div class="form-group">
+                <label for="textArea">Raison d'adoption</label>
+
+          <!-- A text box for explaining the reasons for adoptions  -->
+
+                <textarea name="raison" class="form-control" id="textArea" rows="3" placeholder="Saissisez ici les raisons pour lesquelles vous souhaitez adopter ce chat..."></textarea>
+                <p></p>
+              </div>
+
+              <button class="btn btn-primary" type="submit">Envoyer</button>
+            </fieldset>
+          </form>
+        </aside>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="paragraphe">
+        <h1>Nos chats à adopter</h1>
+        <p>
+          Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium, cum ego idem antea multa decreverim, que magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea. Rei publicae satis erat tot dierum quot C. Mario ; dis immortalibus non erat exigua eadem gratulatio quae ex maximis bellis. Ergo ille cumulus dierum hominis est dignitati tributus.</p>
+
+          <p>Haec igitur prima lex amicitiae sanciatur, ut ab amicis honesta petamus, amicorum causa honesta faciamus, ne exspectemus quidem, dum rogemur; studium semper adsit, cunctatio absit; consilium vero dare audeamus libere. Plurimum in amicitia amicorum bene suadentium valeat auctoritas, eaque et adhibeatur ad monendum non modo aperte sed etiam acriter, si res postulabit, et adhibitae pareatur.</p>
+      </div>
+      <div class="image">
+        <img src="img/tete-chat.png" width="200px"/>
+      </div>
+    </div>
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© OhMyCats</p>
+  </footer>
+
+
+
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
